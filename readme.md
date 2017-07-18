@@ -15,7 +15,7 @@ console.log(filteredObj.true) // [2, 4, 6, 8]
 console.log(filteredObj.false) // [1, 3, 5, 7]
 
 
-## API
+# # API
 
 ### doubleFilter(arr, predicateFn, self)
 
