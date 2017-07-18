@@ -1,11 +1,12 @@
-function doubleFilter(arr, predicate){
-    var result = {
+export default function doubleFilter(arr, predicateFn, self){
+    const result = {
         true: [],
         false: []
     }
+    const boundPredicate = predicateFn.bind(self)
 
-    for(var i = 0; i < arr.length; i++){
-        if( predicate(arr[i], i, arr) ){
+    for (var i = 0; i < arr.length; i++){
+        if ( boundPredicate(arr[i], i, arr) ){
             result.true.push(arr[i]);
         } else {
             result.false.push(arr[i]);
