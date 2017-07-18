@@ -19,7 +19,11 @@ console.log(filteredObj.false) // [1, 3, 5, 7]
 
 ### doubleFilter(arr, predicateFn, self)
 
-Return an object with a property true, that is the array with elements of `arr` for which `predicateFn` returns a truthy value, and a property false that is the array with elements of `arr` for which `predicateFn` returns a falsey value. 
+Return an object with the following properties:
+*true, that is the array with elements of `arr` for which `predicateFn` returns the boolean value true 
+*false that is the array with elements of `arr` for which `predicateFn` returns the boolean value false 
+*truthy that is the array with elements of `arr` for which `predicateFn` returns any truthy value. 
+*falsey that is the array with elements of `arr` for which `predicateFn` returns any falsey value. 
 
 `fn` is called with
 
