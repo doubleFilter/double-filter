@@ -8,13 +8,11 @@ var array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 function isEven(num){
     return num % 2 === 0;
 }
-```
 
-return filteredObj = doubleFilter(array, isEven)
+filteredObj = doubleFilter(array, isEven)
 console.log(filteredObj.true) // [2, 4, 6, 8]
 console.log(filteredObj.false) // [1, 3, 5, 7]
-
-
+```
 # # API
 
 ### doubleFilter(arr, predicateFn, self)
